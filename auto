@@ -1,0 +1,10 @@
+VERSION BUILD=10021450
+URL GOTO=https://instamoda.org/tools/send-follower/4864167531
+TAG POS=1 TYPE=SPAN ATTR=TXT:Send<SP>Follower
+TAG POS=1 TYPE=INPUT:TEXT FORM=ACTION:?formType=findUserID ATTR=NAME:username CONTENT=hongl33vip
+Wait seconds=5
+TAG POS=1 TYPE=BUTTON FORM=ACTION:?formType=findUserID ATTR=TXT:Kullanıcıyı<SP>Bul
+Wait seconds=2
+TAG POS=1 TYPE=BUTTON FORM=ID:formTakip ATTR=ID:formTakipSubmitButton
+Wait seconds=30
+SET !LOOP -999999
